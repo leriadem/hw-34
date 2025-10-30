@@ -31,13 +31,21 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource', // Робота з зображеннями
       },
+
       {
         test: /\.(ttf|woff|woff2|eot)$/i,
         type: 'asset/resource', // Робота зі шрифтами
         generator: {
           filename: 'fonts/[hash][ext][query]'
         }
+      },
+      
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
       }
+
     ],
   },
   plugins: [
@@ -57,4 +65,7 @@ module.exports = {
     port: 3000,
     open: true,
   },
+  resolve: {
+  extensions: ['.ts', '.js'],
+},
 };

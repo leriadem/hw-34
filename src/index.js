@@ -1,6 +1,7 @@
 import './styles.css';
 import _ from 'lodash';
 import logo from './images/logo.png';
+import './test.ts';
 
 const image = document.createElement('img');
 image.src = logo;
