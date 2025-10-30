@@ -16,6 +16,17 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'], // Підтримка CSS
       },
+
+      {
+        test: /\.less$/i,
+        use: ['style-loader', 'css-loader', 'less-loader'], // Підтримка LESS
+      },
+
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'], // Підтримка SCSS
+      },
+
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource', // Робота з зображеннями
