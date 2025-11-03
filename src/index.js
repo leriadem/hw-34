@@ -9,3 +9,8 @@ document.body.appendChild(image);
 
 const message = _.join(['Привіт', 'від', 'Webpack!'], ' ');
 console.log(message);
+
+const user = {
+  info: { name: "Leria 🤍" }
+};
+console.log(user?.info?.name);
