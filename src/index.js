@@ -11,6 +11,6 @@ const message = _.join(['Привіт', 'від', 'Webpack!'], ' ');
 console.log(message);
 
 const user = {
-  info: { name: "Leria 🤍" }
+  info: { name: 'Leria 🤍' },
 };
 console.log(user?.info?.name);

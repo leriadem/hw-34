@@ -36,10 +36,10 @@ module.exports = {
         test: /\.(ttf|woff|woff2|eot)$/i,
         type: 'asset/resource', // Робота зі шрифтами
         generator: {
-          filename: 'fonts/[hash][ext][query]'
-        }
+          filename: 'fonts/[hash][ext][query]',
+        },
       },
-      
+
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
@@ -52,8 +52,7 @@ module.exports = {
         test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/,
-      }
-
+      },
     ],
   },
   plugins: [
@@ -74,6 +73,6 @@ module.exports = {
     open: true,
   },
   resolve: {
-  extensions: ['.ts', '.js'],
-},
+    extensions: ['.ts', '.js'],
+  },
 };
